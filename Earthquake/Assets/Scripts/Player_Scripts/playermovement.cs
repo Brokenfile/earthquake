@@ -18,16 +18,20 @@ public class playermovement : MonoBehaviour
        movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
 
-       animator.SetFloat("Horizontal", movement.x);
-       animator.SetFloat("Vertical", movement.y);
-       animator.SetFloat("Speed", movement.sqrMagnitude);
+       if (movement != Vector2.zero)
+    {
+         animator.SetFloat("Horizontal", movement.x);
+         animator.SetFloat("Vertical", movement.y);
     }
+     animator.SetFloat("Speed", movement.sqrMagnitude);
+    }
+
 
 
 
     void FixedUpdate() 
     {
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
-
+        rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime); 
     }
 }
