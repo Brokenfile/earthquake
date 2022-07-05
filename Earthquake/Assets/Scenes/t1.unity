@@ -157,6 +157,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0.4
+  runmultiplier: 3
+  dummyy: 1
   rb: {fileID: 391059589}
   animator: {fileID: 391059590}
 --- !u!212 &391059587
