@@ -6,8 +6,7 @@ public class playermovement : MonoBehaviour
 {
 
     public float moveSpeed = 0.5f;
-    public float runmultiplier = 3f;
-    public float dummyy = 1f;
+   
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -26,6 +25,7 @@ public class playermovement : MonoBehaviour
          animator.SetFloat("Vertical", movement.y);
     }
      animator.SetFloat("Speed", movement.sqrMagnitude);
+     
     }
 
 
@@ -33,15 +33,17 @@ public class playermovement : MonoBehaviour
 
     void FixedUpdate() 
     {
-        if (Input.GetKey(KeyCode.LeftControl))
+        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime); 
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            dummyy = runmultiplier;
+            moveSpeed = 1f;
+            animator.SetFloat("realSpeed", 1f);
         }
-        else
-        {
-            dummyy = 1f;
+        else{
+            moveSpeed = 0.5f;
+            animator.SetFloat("realSpeed", 0.5f);
         }
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime * dummyy);
-        rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime  * dummyy); 
+       
     }
 }
