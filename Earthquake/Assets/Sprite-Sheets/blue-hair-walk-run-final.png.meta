@@ -297,7 +297,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 69
-        y: 72
+        y: 73
         width: 14
         height: 23
       alignment: 0
@@ -317,9 +317,9 @@ TextureImporter:
       name: blue-hair-walk-run-final_20
       rect:
         serializedVersion: 2
-        x: 3
+        x: 2
         y: 36
-        width: 13
+        width: 14
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -380,7 +380,7 @@ TextureImporter:
       name: blue-hair-walk-run-final_23
       rect:
         serializedVersion: 2
-        x: 47
+        x: 46
         y: 40
         width: 15
         height: 26
@@ -401,7 +401,7 @@ TextureImporter:
       name: blue-hair-walk-run-final_24
       rect:
         serializedVersion: 2
-        x: 64
+        x: 65
         y: 41
         width: 15
         height: 25
@@ -486,9 +486,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 47
-        y: 8
+        y: 7
         width: 15
-        height: 26
+        height: 27
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,7 +507,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 66
-        y: 8
+        y: 9
         width: 15
         height: 25
       alignment: 0
@@ -523,27 +523,6 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: blue-hair-walk-run-final_1
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 111
-        width: 2
-        height: 2
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36a421e91acc51b4c9c80219d99c4b99
-      internalID: 1086377047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -555,7 +534,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blue-hair-walk-run-final_00: 557771534
       blue-hair-walk-run-final_04: -955930983
       blue-hair-walk-run-final_13: 1097337733
       blue-hair-walk-run-final_31: -949576917
@@ -563,11 +541,12 @@ TextureImporter:
       blue-hair-walk-run-final_33: -315602047
       blue-hair-walk-run-final_11: -958409137
       blue-hair-walk-run-final_1: 1086377047
+      blue-hair-walk-run-final_00: 557771534
       blue-hair-walk-run-final_01: -773436961
-      blue-hair-walk-run-final_02: 1115147523
       blue-hair-walk-run-final_30: 1117129244
-      blue-hair-walk-run-final_23: 1073766578
+      blue-hair-walk-run-final_02: 1115147523
       blue-hair-walk-run-final_34: -69474980
+      blue-hair-walk-run-final_23: 1073766578
       blue-hair-walk-run-final_10: -955930983
       blue-hair-walk-run-final_12: 1876845502
       blue-hair-walk-run-final_20: -244425918
