@@ -37,8 +37,8 @@ public class playermovement : MonoBehaviour
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime); 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            moveSpeed = 1f;
-            animator.SetFloat("realSpeed", 1f);
+                moveSpeed = 1f;
+                animator.SetFloat("realSpeed", 1f);
         }
         else{
             moveSpeed = 0.5f;
