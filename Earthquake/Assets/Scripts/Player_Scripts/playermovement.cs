@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class playermovement : MonoBehaviour
 {
-
-    public float moveSpeed = 0.5f;
    
+    public float moveSpeed = 0.5f;
+    public float armor;
 
     public Rigidbody2D rb;
     public Animator animator;
@@ -16,6 +16,12 @@ public class playermovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            moveSpeed = 3f;
+            Attack();
+        }
+
        movement.x = Input.GetAxisRaw("Horizontal");
        movement.y = Input.GetAxisRaw("Vertical");
         
@@ -28,12 +34,16 @@ public class playermovement : MonoBehaviour
      
     }
 
-
+    void Attack()
+    {
+        animator.SetTrigger("Attack");
+    }
 
 
     void FixedUpdate() 
     {
-        rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+        animator.SetFloat("Armor", 1f);
+        rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
         rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime); 
         if (Input.GetKey(KeyCode.LeftShift))
         {
@@ -44,6 +54,6 @@ public class playermovement : MonoBehaviour
             moveSpeed = 0.5f;
             animator.SetFloat("realSpeed", 0.5f);
         }
-       
+      
     }
 }

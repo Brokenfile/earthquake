@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7db639e16ad32844aa4f805df3b89ad9
+guid: bfb5378298f98e940bd49f3a7aa589d7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -100,257 +100,269 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blue-hair_front_idle
+      name: front-attack-2_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 99
-        width: 16
+        y: 10
+        width: 18
         height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e09265b491942684e963192e77eaefe5
-      internalID: 1674217006
+      spriteID: 8fb9626d167eda0488a4ff596299b8cd
+      internalID: 1096369519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blue-hair_back_idle
+      name: front-attack-2_1
       rect:
         serializedVersion: 2
-        x: 21
-        y: 99
-        width: 16
+        x: 22
+        y: 9
+        width: 30
+        height: 34
+      alignment: 9
+      pivot: {x: 0.73561734, y: 0.43070093}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b74cbe056e61994ba1d443d3991f7ac
+      internalID: -1923923077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 9
+        width: 42
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5373995, y: 0.43840083}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f295794655d166489b6dcf0eab7f13f
+      internalID: 511213315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 10
+        width: 44
+        height: 34
+      alignment: 9
+      pivot: {x: 0.5237999, y: 0.43070126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0050363991630e345bfebd750d109f2f
+      internalID: -1774718368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_4
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 10
+        width: 46
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5056912, y: 0.3966592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33240911b0fe42c4eb751aff67e18ca4
+      internalID: -2009774628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_5
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 9
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.41944727, y: 0.35231972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed67609cdca6d04b85c8e10cf11bfc9
+      internalID: 1198026640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_6
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 9
+        width: 40
+        height: 39
+      alignment: 9
+      pivot: {x: 0.428006, y: 0.3657454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ffcd4eccb30ac4fa86d0f6503d8515
+      internalID: 230135755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_7
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 10
+        width: 44
+        height: 38
+      alignment: 9
+      pivot: {x: 0.48810023, y: 0.35532323}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da72536307883124bbfe11c95504c99e
+      internalID: 20872211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_8
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 10
+        width: 44
+        height: 38
+      alignment: 9
+      pivot: {x: 0.48810023, y: 0.31398642}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28311db478296f843a48c6618a67d84f
+      internalID: 2052375354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_9
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 8
+        width: 43
+        height: 40
+      alignment: 9
+      pivot: {x: 0.43911743, y: 0.3691017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fbda219b14981409d867e481fc62f5
+      internalID: -1613549558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_10
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 10
+        width: 32
+        height: 37
+      alignment: 9
+      pivot: {x: 0.6636238, y: 0.39386615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a3e3eb8eb19ceb4194b4f61ea7f5b9c
+      internalID: 1480197128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: front-attack-2_11
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 10
+        width: 27
         height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.7133156, y: 0.5093502}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c39f18ebcc4db11419346002e20e019b
-      internalID: -958623309
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_right_idle
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 98
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bcbc530aeb66f3a499c1694fe88e8c0f
-      internalID: -1001874214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_left_idle
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 98
-        width: 13
-        height: 30
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e4d436c4e9ad424c979e3d3444b720e
-      internalID: 686608790
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_front_walk0
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 69
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2de170a673cc8e140bb41caa9bfc4cf8
-      internalID: 1434957580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_back_walk0
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 69
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 06ce7f6dc9168f54ba63d4d70361330d
-      internalID: 1087939339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_right_walk0
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 69
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa4d706dff1105541b192b2cd87336ca
-      internalID: 1935728229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_left_walk0
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 69
-        width: 13
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44f568f657447e04c90fc9e1822c35c6
-      internalID: 673131893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_front_walk1
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 42
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 100f6e928fa60134eafba29ef3390952
-      internalID: -942613524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_back_walk1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 40
-        width: 14
-        height: 26
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ec776d75b9b0c994f9571413eea682c2
-      internalID: -549339664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_right_walk1
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 38
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe47b21517082104880eda9533c41ccb
-      internalID: -836905079
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blue-hair_left_walk1
-      rect:
-        serializedVersion: 2
-        x: 62
-        y: 38
-        width: 13
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: adb7632c63e15ea4d916dd80d8d250c9
-      internalID: 962362808
+      spriteID: b24c1f1a924281449835095fcfe606d5
+      internalID: -1820049689
       vertices: []
       indices: 
       edges: []
@@ -366,18 +378,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blue-hair_right_walk0: 1935728229
-      blue-hair_left_walk1: 962362808
-      blue-hair_back_idle: -958623309
-      blue-hair_right_walk1: -836905079
-      blue-hair_front_walk0: 1434957580
-      blue-hair_left_idle: 686608790
-      blue-hair_back_walk1: -549339664
-      blue-hair_front_idle: 1674217006
-      blue-hair_front_walk1: -942613524
-      blue-hair_back_walk0: 1087939339
-      blue-hair_right_idle: -1001874214
-      blue-hair_left_walk0: 673131893
+      front-attack-2_11: -1820049689
+      front-attack-2_0: 1096369519
+      front-attack-2_5: 1198026640
+      front-attack-2_3: -1774718368
+      front-attack-2_1: -1923923077
+      front-attack-2_2: 511213315
+      front-attack-2_7: 20872211
+      front-attack-2_10: 1480197128
+      front-attack-2_4: -2009774628
+      front-attack-2_8: 2052375354
+      front-attack-2_9: -1613549558
+      front-attack-2_6: 230135755
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
