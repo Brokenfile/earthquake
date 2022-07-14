@@ -160,6 +160,13 @@ MonoBehaviour:
   armor: 0
   rb: {fileID: 391059589}
   animator: {fileID: 391059590}
+  attackPoint: {fileID: 2076846325}
+  attackRange: 0.25
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 64
+  attackDamage: 40
+  attackRate: 2
 --- !u!212 &391059587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -220,11 +227,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391059585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.318, y: 3.267, z: 3}
+  m_LocalPosition: {x: -0.322, y: 3.267, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 621784061}
+  - {fileID: 2076846325}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -348,7 +356,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1
+  orthographic size: 0.7991547
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12401,6 +12409,16 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -6, y: 47, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 47, z: 0}
     second:
       serializedVersion: 2
@@ -12632,6 +12650,16 @@ Tilemap:
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
   - first: {x: -7, y: 48, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 20
+      m_TileSpriteIndex: 20
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -6, y: 48, z: 0}
     second:
       serializedVersion: 2
       m_TileIndex: 20
@@ -24153,7 +24181,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: f8cfb0f739d292545829e49d7d1c0967, type: 2}
   - m_RefCount: 198
     m_Data: {fileID: 11400000, guid: 2ebb69ff1a4e93748b296ae20d15874f, type: 2}
-  - m_RefCount: 633
+  - m_RefCount: 635
     m_Data: {fileID: 11400000, guid: 8245d3c4edaeb304490f2d55e6bcebb3, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: cc14d7fd9efb48f4c8b3afba23a5f16f, type: 2}
@@ -24238,7 +24266,7 @@ Tilemap:
     m_Data: {fileID: 839707438, guid: b5a93105334b4a042b04ce700824e4fd, type: 3}
   - m_RefCount: 198
     m_Data: {fileID: -1099540804, guid: b5a93105334b4a042b04ce700824e4fd, type: 3}
-  - m_RefCount: 633
+  - m_RefCount: 635
     m_Data: {fileID: -813619738, guid: b5a93105334b4a042b04ce700824e4fd, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 2021523129, guid: b5a93105334b4a042b04ce700824e4fd, type: 3}
@@ -24283,7 +24311,7 @@ Tilemap:
   - m_RefCount: 3
     m_Data: {fileID: 1987780022, guid: f111ca3f5ab4df44787184ce71a9bdfa, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2354
+  - m_RefCount: 2356
     m_Data:
       e00: 1
       e01: 0
@@ -24302,7 +24330,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 2354
+  - m_RefCount: 2356
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -24340,7 +24368,8 @@ GameObject:
   - component: {fileID: 955625827}
   - component: {fileID: 955625826}
   - component: {fileID: 955625828}
-  m_Layer: 0
+  - component: {fileID: 955625829}
+  m_Layer: 6
   m_Name: slime-2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24460,6 +24489,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.05054617, y: 0.053934574}
   m_EdgeRadius: 0
+--- !u!114 &955625829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955625824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7911c3dd144afeb4a9631e00420bbeb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
 --- !u!1 &1258190429
 GameObject:
   m_ObjectHideFlags: 0
@@ -24514,7 +24556,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1419972572}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30488,3 +30530,34 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!1 &2076846324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076846325}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2076846325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076846324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.003, y: -0.028, z: -13}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 391059588}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
